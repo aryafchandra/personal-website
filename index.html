@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Arya F Chandra — Full-Stack Engineer</title>
+<meta name="description" content="Arya F Chandra, full-stack software engineer — player card portfolio.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="navbar">
+  <div class="navbar__logo">A. CHANDRA <span>#8</span></div>
+  <div class="navbar__links">
+    <a href="#profile">PLAYER PROFILE</a>
+    <a href="#roster">ACADEMY HISTORY</a>
+    <a href="#camp">TRAINING GROUND</a>
+    <a href="#playbook">PLAYBOOK</a>
+    <a href="#contact">TRANSFER MARKET</a>
+  </div>
+</nav>
+
+<!-- TICKER -->
+<div class="ticker">
+  <div class="ticker__track">
+    <span class="ticker__item">⚽ LATEST: FRESH GRADUATE — B.SC. COMPUTER SCIENCE, UNIVERSITAS INDONESIA &nbsp;&nbsp;•&nbsp;&nbsp; STACK: REACT • NODE.JS • DJANGO • SPRING BOOT &nbsp;&nbsp;•&nbsp;&nbsp; OPEN TO ENTRY-LEVEL / JUNIOR FULL-STACK ROLES &nbsp;&nbsp;•&nbsp;&nbsp; AVAILABLE IMMEDIATELY &nbsp;&nbsp;•&nbsp;&nbsp;</span>
+    <span class="ticker__item">⚽ LATEST: FRESH GRADUATE — B.SC. COMPUTER SCIENCE, UNIVERSITAS INDONESIA &nbsp;&nbsp;•&nbsp;&nbsp; STACK: REACT • NODE.JS • DJANGO • SPRING BOOT &nbsp;&nbsp;•&nbsp;&nbsp; OPEN TO ENTRY-LEVEL / JUNIOR FULL-STACK ROLES &nbsp;&nbsp;•&nbsp;&nbsp; AVAILABLE IMMEDIATELY &nbsp;&nbsp;•&nbsp;&nbsp;</span>
+  </div>
+</div>
+
+<!-- HERO: PLAYER CARD -->
+<section class="hero">
+  <div class="hero__intro">
+    <div class="eyebrow">DRAFT PROSPECT • HOVER CARD TO SCOUT STATS</div>
+    <h1 class="hero__title">ARYA F CHANDRA</h1>
+    <div class="hero__subtitle">FULL&#8209;STACK ENGINEER — FRESH OUT OF THE ACADEMY</div>
+  </div>
+
+  <div class="card-stage">
+    <button class="flip-card" type="button" aria-label="Flip player card to see match attributes">
+      <div class="flip-card__inner">
+
+        <!-- FRONT -->
+        <div class="flip-card__face flip-card__face--front">
+          <div class="flip-card__ribbon">
+            <span>MIDFIELDER</span><span>NO. 8</span>
+          </div>
+          <div class="flip-card__photo">
+            <img class="photo-slot" src="images/headshot.jpeg" alt="Arya F Chandra headshot">
+          </div>
+          <div class="flip-card__caption">
+            <div class="flip-card__name">ARYA F CHANDRA</div>
+            <div class="flip-card__meta">FULL-STACK • CLASS OF 2026</div>
+          </div>
+        </div>
+
+        <!-- BACK -->
+        <div class="flip-card__face flip-card__face--back">
+          <div class="flip-card__back-title">MATCH ATTRIBUTES</div>
+          <div class="attr-list">
+            <div class="attr-row"><span>DRI — React</span><b>82</b></div>
+            <div class="attr-row"><span>PAS — Node.js</span><b>80</b></div>
+            <div class="attr-row"><span>SHO — Django</span><b>78</b></div>
+            <div class="attr-row"><span>DEF — Spring Boot</span><b>75</b></div>
+          </div>
+          <div class="flip-card__footnote">CARD 1 OF 1 — UNIVERSITAS INDONESIA, B.SC. COMPUTER SCIENCE '26</div>
+        </div>
+
+      </div>
+    </button>
+  </div>
+</section>
+
+<!-- SCOREBOARD -->
+<section class="scoreboard">
+  <div class="section-kicker">DRAFT COMBINE</div>
+  <div class="scoreboard__grid">
+    <div class="stat-card">
+      <div class="stat-card__value">2026</div>
+      <div class="stat-card__label">GRAD YEAR</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-card__value">0</div>
+      <div class="stat-card__label">PRO CAPS</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-card__value">UI</div>
+      <div class="stat-card__label">ALMA MATER</div>
+    </div>
+  </div>
+</section>
+
+<!-- DRAFT PROFILE / ABOUT -->
+<section id="profile" class="section">
+  <div class="section__inner">
+    <div class="section-heading">
+      <span class="section-heading__num">01</span>
+      <h2 class="section-heading__title">PLAYER PROFILE</h2>
+    </div>
+    <div class="profile-grid">
+      <div class="profile-copy">
+        <p><b>Scouting report:</b> A full-stack developer fresh out of Universitas Indonesia's Computer Science program — no professional minutes on the clock yet, but game-ready reps built through coursework and personal projects across React, Node.js, Django, and Spring Boot.</p>
+        <p>Comfortable operating on both ends of the pitch, from API design to frontend delivery. Currently in pre-season: available immediately and looking to make an entry-level or junior full-stack squad.</p>
+      </div>
+      <div class="vitals-card">
+        <div class="vitals-card__title">VITALS</div>
+        <div class="vitals-row"><span>ROLE</span><span>Full-Stack Developer</span></div>
+        <div class="vitals-row"><span>EDUCATION</span><span>B.Sc. CS, Universitas Indonesia '26</span></div>
+        <div class="vitals-row"><span>EXPERIENCE LEVEL</span><span>Entry-Level / Junior</span></div>
+        <div class="vitals-row"><span>STATUS</span><span class="vitals-row__status">AVAILABLE</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CAREER ROSTER / EXPERIENCE -->
+<section id="roster" class="section section--tinted">
+  <div class="section__inner">
+    <div class="section-heading">
+      <span class="section-heading__num">02</span>
+      <h2 class="section-heading__title">ACADEMY HISTORY</h2>
+    </div>
+
+    <div class="timeline"></div>
+  </div>
+</section>
+
+<!-- TRAINING CAMP / SKILLS -->
+<section id="camp" class="section section--dark">
+  <div class="section__inner">
+    <div class="section-heading">
+      <span class="section-heading__num section-heading__num--gold">03</span>
+      <h2 class="section-heading__title section-heading__title--light">TRAINING GROUND</h2>
+    </div>
+    <div class="skills-grid"></div>
+  </div>
+</section>
+
+<!-- PLAYBOOK / PROJECTS -->
+<section id="playbook" class="section">
+  <div class="section__inner section__inner--wide">
+    <div class="section-heading">
+      <span class="section-heading__num">04</span>
+      <h2 class="section-heading__title">THE TACTICS BOARD</h2>
+      <span class="section-heading__hint">— hover a play to see the formation</span>
+    </div>
+
+    <div class="playbook-grid"></div>
+  </div>
+</section>
+
+<!-- CONTACT / FREE AGENCY -->
+<section id="contact" class="contact">
+  <div class="contact__inner">
+    <div class="section-kicker section-kicker--gold">TRANSFER MARKET</div>
+    <h2 class="contact__title">OPEN FOR TRANSFER</h2>
+    <p class="contact__copy">Scouting entry-level / junior full-stack roles. Fresh graduate, ready to make the squad — reach out and I'll bring the execution.</p>
+    <div class="contact__links">
+      <a class="btn btn--primary" href="mailto:arya@example.com">EMAIL ME</a>
+      <a class="btn btn--ghost" href="https://github.com">GITHUB</a>
+      <a class="btn btn--ghost" href="https://linkedin.com">LINKEDIN</a>
+    </div>
+    <div class="contact__footer">© 2026 ARYA F CHANDRA — ALL PLAYS RESERVED</div>
+  </div>
+</section>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
