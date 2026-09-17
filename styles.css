@@ -20,12 +20,26 @@
   --color-gold: oklch(75% 0.16 85);
   --color-green: oklch(52% 0.15 145);
 
-  --font-display: 'Bebas Neue', sans-serif;
+  --font-display: 'Plus Jakarta Sans', sans-serif;
   --font-body: 'Plus Jakarta Sans', sans-serif;
-  --font-mono: 'JetBrains Mono', monospace;
+  --font-mono: 'Plus Jakarta Sans', sans-serif;
 }
 
 * { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+}
+
+section[id] {
+  scroll-margin-top: 84px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
 
 body {
   margin: 0;
@@ -356,6 +370,7 @@ button { font: inherit; }
 .section__inner--wide { max-width: 1000px; gap: 32px; }
 
 #roster .section__inner,
+#career .section__inner,
 #camp .section__inner { gap: 32px; }
 #camp .section__inner { gap: 36px; }
 

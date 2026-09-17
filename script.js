@@ -14,6 +14,22 @@ function renderClubHistory() {
   `).join("");
 }
 
+function renderCareerHistory() {
+  const timeline = document.querySelector(".career-timeline");
+  if (!timeline) return;
+
+  timeline.innerHTML = CAREER_HISTORY.map((entry, i) => `
+    <div class="timeline-row${i === CAREER_HISTORY.length - 1 ? " timeline-row--last" : ""}">
+      <div class="timeline-row__dates">${entry.dates}</div>
+      <div>
+        <div class="timeline-row__club">${entry.club} <span>— ${entry.role}</span></div>
+        <div class="timeline-row__highlight">${entry.highlight}</div>
+      </div>
+      <div class="badge badge--${entry.badge}">${entry.badge === "bench" ? "BENCH" : "STARTER"}</div>
+    </div>
+  `).join("");
+}
+
 function renderSkills() {
   const grid = document.querySelector(".skills-grid");
   if (!grid) return;
@@ -56,6 +72,7 @@ function renderProjects() {
 }
 
 renderClubHistory();
+renderCareerHistory();
 renderSkills();
 renderProjects();
 
