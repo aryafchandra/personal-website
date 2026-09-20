@@ -57,9 +57,12 @@ function renderProjects() {
     <button class="play-card" type="button" aria-label="Flip to see formation details for ${project.title}">
       <div class="play-card__inner">
         <div class="play-card__face play-card__face--front">
-          <div class="play-card__tag">${project.tag}</div>
-          <div class="play-card__title">${project.title}</div>
-          <div class="play-card__stack">${project.stack}</div>
+          ${project.image ? `<img class="play-card__image" src="${project.image}" alt="${project.title} landing page screenshot">` : ""}
+          <div class="play-card__content">
+            <div class="play-card__tag">${project.tag}</div>
+            <div class="play-card__title">${project.title}</div>
+            <div class="play-card__stack">${project.stack}</div>
+          </div>
         </div>
         <div class="play-card__face play-card__face--back">
           <div><b>PROBLEM</b><div>${project.problem}</div></div>
